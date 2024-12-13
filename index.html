@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Информация о плотинах Казахстана">
+    <meta name="keywords" content="плотина, гидроэнергетика, Казахстан">
+    <meta name="author" content="Плотины Казахстана">
+    <meta property="og:title" content="Плотины Казахстана">
+    <meta property="og:description" content="Информация о плотинах в Казахстане">
+    <meta property="og:image" content="image.jpg">
+    <title>Плотины Казахстана</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-XXXXX-Y');
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Плотины Казахстана</h1>
+    <p>Информация о плотинах, гидроэнергетике и водохранилищах</p>
+</header>
+
+<nav>
+    <a href="#home">Главная</a>
+    <a href="#about">О нас</a>
+    <a href="#projects">Проекты</a>
+    <a href="#contact">Контакты</a>
+    <a href="map.html">Карта плотин и дамб</a>
+</nav>
+
+<section id="home" class="container">
+    <h2>Добро пожаловать на наш сайт!</h2>
+    <p>Здесь вы найдете информацию о плотинах, расположенных по всему Казахстану. Узнайте о наших гидроэнергетических проектах, роли плотин в экосистемах и многом другом.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXJP9qm4uRAq6mI8oebYKSDKTX2t_d4xsgcQ&s" alt="Плотина 1" class="responsive-img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgdL9nkNDpZxdrFnY0tCkeF7A99LOi4rx-cQ&s" alt="Плотина 2" class="responsive-img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5EpUS8eUReDnLkkmVgEQ68CRuzuwFaiPDrQ&s" width="300" alt="Плотина 3" class="responsive-img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZZa5YdfRoDPx64zZf-HuDSwskgXAd4R0W2w&s" width="300" alt="Плотина 4" class="responsive-img">
+</section>
+
+<section id="about" class="container">
+    <h2>О нас</h2>
+    <p>Мы студенты 2 курса Университета Есенова, факультета Туризм и Языки. Мы работаем над проектом плотины в рамках предмета "Глобальная экология"</p>
+    <p>Наша цель — предоставить актуальную информацию о плотинах и гидротехнических сооружениях в Казахстане, а также продвигать идеи устойчивого использования водных ресурсов.</p>
+</section>
+
+<section id="projects" class="container">
+    <h2>Наши проекты</h2>
+    <p>В нашем проекте, мы затрагиваем тему плотин и дамб в Казахстане, а также мы предлагаем сделать плотину севернее Петропавловска и южнее Ивановки.</p>
+</section>
+
+<section id="contact" class="container">
+    <h2>Контакты</h2>
+    <p>Если у вас есть вопросы или предложения, пожалуйста, свяжитесь с нами через форму ниже:</p>
+    
+    <!-- Форма обратной связи -->
+    <form action="submit_form.php" method="post">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">Сообщение:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Отправить">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Плотины Казахстана | Все права защищены</p>
+</footer>
+
+<!-- Интерактивная карта (например, с использованием Leaflet.js) -->
+<div id="map" style="height: 300px;"></div>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.
